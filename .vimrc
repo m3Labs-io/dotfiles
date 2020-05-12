@@ -111,9 +111,9 @@ Plug 'stephpy/vim-yaml'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-liquid'
-Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-rails'
 Plug 'vim-python/python-syntax'
-Plug 'vim-ruby/vim-ruby'
+" Plug 'vim-ruby/vim-ruby'
 Plug 'wgwoods/vim-systemd-syntax'
 
 call plug#end()
