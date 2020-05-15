@@ -22,5 +22,3 @@ sudo apt-get install ruby-full
 # gem install jekyll bundler
 
 # bundle init
-
-# test 2020
