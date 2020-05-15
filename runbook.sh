@@ -15,4 +15,12 @@ tmux kill-server
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+# Install Ruby(Jekyll)
 
+sudo apt-get install ruby-full
+
+# gem install jekyll bundler
+
+# bundle init
+
+g
