@@ -6,6 +6,14 @@
 " Plugins
 " -----------------------------------------------------------------------------
 
+" Installs vim.plug if not already installed.
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " Specify a directory for plugins.
 call plug#begin('~/.vim/plugged')
 
@@ -111,9 +119,9 @@ Plug 'stephpy/vim-yaml'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-liquid'
-Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-rails'
 Plug 'vim-python/python-syntax'
-Plug 'vim-ruby/vim-ruby'
+" Plug 'vim-ruby/vim-ruby'
 Plug 'wgwoods/vim-systemd-syntax'
 
 call plug#end()
